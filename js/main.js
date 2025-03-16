@@ -5,7 +5,6 @@ const navMenuLinks = document.querySelectorAll('.nav-menu__link');
 
 
 burgerMenu.addEventListener('click', ()=> {
-   console.log('Ok');
    burgerMenu.classList.toggle('burger-menu_opened');
    navMenu.classList.toggle('nav-menu_opened');
    body.classList.toggle('no-scroll');
@@ -13,9 +12,9 @@ burgerMenu.addEventListener('click', ()=> {
 
 
 navMenuLinks.forEach(link => {
-   link.addEventListener('clcik', ()=>{
-      burgerMenu.classList.remove('burger-menu_opened');
-      navMenu.classList.remove('nav-menu_opened');
+   link.addEventListener('clcik', ()=> {
+      burgerMenu.classList.toggle('burger-menu_opened');
+      navMenu.classList.toggle('nav-menu_opened');
       body.classList.remove('no-scroll');
    })
 });
