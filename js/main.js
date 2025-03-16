@@ -12,11 +12,11 @@ burgerMenu.addEventListener('click', ()=> {
 
 
 navMenuLinks.forEach(link => {
-   link.addEventListener('clcik', ()=> {
+   link.addEventListener('click', ()=> {
       burgerMenu.classList.toggle('burger-menu_opened');
       navMenu.classList.toggle('nav-menu_opened');
       body.classList.remove('no-scroll');
-   })
+   });
 });
 
 
